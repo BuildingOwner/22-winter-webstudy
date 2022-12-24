@@ -1,0 +1,40 @@
+.section__article tr:last-child {
+    border-bottom: 1px solid #666;
+}
+
+.section__article thead {
+    vertical-align: middle;
+    height: 44px;
+}
+
+.section__article table {
+    font-weight: 600;
+    border-bottom: 1px solid #666;
+    border-collapse: collapse;
+
+    text-align: center;
+}
+
+.section__article .your_title {
+    text-align: left;
+}
+
+.section__article tr {
+    height: 44px;
+    border-bottom: 1px solid #666;
+}
+
+.section__article .num,
+.section__article .count,
+.section__article .author,
+.section__article .date {
+    width: 10%;
+}
+
+.section__article .title {
+    text-align: center;
+}
+
+.section__article .title {
+    width: 60%;
+}

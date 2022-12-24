@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- html include -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!--  -->
+    <link rel="stylesheet" href="..\studyJaewan\whiteForm.css">
+</head>
+
+<body style="background-color: #1e1e1e; color: white;">
+    <!-- html include -->
+    <div id="header__bar" w3-include-html="..\studyJaewan\headerBar.html">
+        <script>
+            w3.includeHTML();
+        </script>
+    </div>
+    <!--  -->
+    <div id="section">
+        <h1>스터디 글쓰기</h1>
+        <select class="select" name="select_board">
+            <option value="">게시판을 선택하세요</option>
+            <option value="progress">활동</option>
+            <option value="announce">공지</option>
+            <option value="data">자료</option>
+        </select>
+        <hr>
+        <form class="write">
+            <input class="title" name="title" type="text" placeholder="글 제목을 입력하세요.">
+            <hr>
+            <textarea class="content" name="content" placeholder="내용을 입력하세요."></textarea>
+            <hr>
+            <input class="file" name="file" type="file">
+            <hr>
+            <button id="btn" type="button" class="btn btn-secondary right">
+                <a href="..\studyJaewan\innerStudy.html">게시</a>
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

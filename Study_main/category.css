@@ -1,0 +1,45 @@
+#section {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#section__category {
+    margin-top: 30px;
+}
+
+#category {
+    border: 1px solid #666;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#category ul {
+    height: 130px;
+    overflow-y: scroll;
+
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+#category ul li {
+    padding: 5px;
+}
+
+#category ul li:hover {
+    background-color: #5c5c5c
+}
+
+#category1 {
+    width: 25%;
+}
+
+#category2 {
+    width: 25%;
+}
+
+#category3 {
+    width: 50%;
+}
