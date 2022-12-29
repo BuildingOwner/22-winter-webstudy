@@ -149,7 +149,8 @@
             margin: 0;
             margin-top: 10px;
         }
-        
+
+        /*태블릿*/
         @media screen and (max-width:1024){
             .section {
             width: 60%;
@@ -176,10 +177,11 @@
             margin-left: 1%;
         }
         }
+
         /*모바일*/
        @media screen and (max-width: 768px) {
         .section {
-            font-size: 0.4rem;
+            /*font-size: 0.4rem;*/
             width: 60%;
             height: 90vh;
             flex-shrink: 0;
@@ -231,7 +233,7 @@
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
-            font-size: 1rem;
+            font-size: 1rem; 
         }
         .section__title {
             width: 95%;
@@ -242,6 +244,8 @@
             justify-content: space-evenly;
         }
        }
+
+     
     
      
 
