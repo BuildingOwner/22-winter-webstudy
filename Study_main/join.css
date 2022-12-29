@@ -9,7 +9,8 @@ body {
 }
 
 #section {
-  margin: 100px 0px;
+  margin: 30px 0px;
+    
 }
 
 table,
@@ -41,7 +42,7 @@ td.button {
 }
 
 td button.gotostudy {
-  background-color: red;
+  background-color: gray;
   border: none;
   border-radius: 5px;
   color: white;
@@ -71,20 +72,20 @@ td button.gotostudy {
 }
 
 #pasing a.here {
-  border: 1px solid red;
+  border: 1px solid gray;
   border-radius: 2px;
-  background-color: red;
+  background-color: gray;
 }
 
 #pasing a:hover {
   border: 1px solid #5c5c5c;
   background-color: #5c5c5c;
-  border-radius: 2px;
+  border-radius: 2px; 
 }
 
 /* 페이지 버튼 */
 #section__create {
-  width: 700px;
+  width: 100%;
   display: flex;
   justify-content: right;
 }
