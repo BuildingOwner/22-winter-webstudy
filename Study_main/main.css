@@ -74,11 +74,8 @@ a {
   right: 200px;
 }
 
-.section__left__bottom {
-  display: flex;
-}
-
-.section__left__bottom__content {
+.section__left__content,
+.section__right__content {
   font-size: 18px;
   margin-top: 10px;
 }
@@ -89,11 +86,10 @@ a {
 
 .section__right {
   width: 47%;
-  height: 650px;
 }
 
 .todo {
-  width: 600px;
+  /* width: 600px; */
   height: 200px;
   font-size: 24px;
   margin-top: 20px;
@@ -153,23 +149,30 @@ a {
   padding: 0;
   margin-left: 10px;
 }
-
+.div__title,
 .div__up,
 .div__down {
   height: 50%;
 }
-
+.div__down {
+  display: flex;
+  justify-content: space-between;
+}
 .space-between,
-.div__down h2 {
+.div__down h2,
+.section__left_title_1 {
   border-bottom: 1px solid white;
 }
+.section__left_title_1 {
+  padding-bottom: 2px;
+}
 
-.section__left__top {
+.section__down__top {
   display: flex;
 }
 
-.section__left__top span,
-.section__left__bottom__content {
+.section__down__left span,
+.section__down__right__content {
   width: 246px;
 }
 
@@ -177,7 +180,10 @@ a {
   padding: 0 0 10px 10px;
   margin: 0;
 }
-
+.div__down__left,
+.div__down__right {
+  width: 47%;
+}
 @media screen and (max-width: 768px) {
   #section {
     align-items: center;
@@ -185,7 +191,7 @@ a {
   }
 
   .section__left {
-    width: 94%;
+    width: 100%;
     height: 650px;
   }
 
@@ -200,10 +206,26 @@ a {
   .section__left__top {
     font-size: 450px;
   }
-  .section__left__bottom__content {
-    font-size: 2rem;
+
+  .section__right {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .div__down {
-    padding-bottom: 100px;
+  .div__up {
+    width: 47%;
+  }
+  .section__left_title_1 {
+    padding: 5px 10px;
+  }
+  /* .section__left__bottom__content {
+    font-size: 1rem;
+  } */
+  .section__left__studyinfo {
+    width: 96%;
+  }
+  .div__dal {
+    width: 47%;
   }
 }
