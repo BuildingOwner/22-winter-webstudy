@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#section {
+  width: 800px;
+  margin: 100px auto;
+}
+
+#section h1,
+.select,
+.write {
+  margin-bottom: 30px;
+}
+
+#section h1 {
+  margin-bottom: 50px;
+}
+
+#section select {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.write .title,
+textarea {
+  width: 100%;
+  padding: 20px;
+}
+
+.title {
+  height: 40px;
+}
+
+.content {
+  height: 500px;
+  font-size: 18px;
+}
+
+.file {
+  padding: 0px;
+}
+
+button a {
+  color: white;
+}
+
+.right {
+  float: right;
+}
+
+input[type="text"],
+textarea {
+  border: 0;
+  font-size: 20px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.select {
+  background-color: #4e4e4e;
+  color: white;
+  border: none;
+  padding: 1px;
+  border-radius: 2px;
+}
+
+textarea::placeholder {
+  font-size: 18px;
+}
+
+#btn {
+  background-color: #4e4e4e;
+  border: none;
+}
+
+#btn:hover {
+  background-color: #5c5c5c;
+}

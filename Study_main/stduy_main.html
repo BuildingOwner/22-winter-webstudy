@@ -3,203 +3,23 @@
 
 <head>
     <!-- 달력 시작 -->
-    <link rel="stylesheet" href="calender.css">
+    <link rel="stylesheet" href="calender.css" />
     <script src="calender.js"></script>
     <!-- 달력 끝 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scal=1.0">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scal=1.0" />
     <title>Study_main</title>
     <!-- html include -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <!--  -->
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        .item {
-            margin-right: 20px;
-            font-size: 24px;
-        }
-
-        #section {
-            width: 1200px;
-            margin: 100px auto;
-        }
-
-        .section__top {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .section__left {
-            width: 47%;
-            height: 650px;
-        }
-
-        .space-between {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .section__left_title {
-            float: left;
-            margin: 5px 10px;
-        }
-
-        #btn,
-        .section__bottom #btn_red:hover {
-            background-color: #878279;
-            border: 1px solid #878279;
-        }
-
-        .section__bottom #btn_red,
-        #btn:hover {
-            background-color: red;
-            border: 1px solid red;
-        }
-
-        .section__left__studyinfo {
-            margin: 20px 10px;
-            width: 541px;
-            height: 200px;
-            border-radius: 5px;
-            background-color: #5c5c5c;
-            position: relative;
-        }
-
-        .section__left__studyinfo img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            position: absolute;
-            top: 25px;
-            left: 20px;
-        }
-
-        .section__left__studyinfo div {
-            position: absolute;
-            top: 55px;
-            right: 200px;
-        }
-
-        .section__left__bottom {
-            display: flex;
-        }
-
-        .section__left__bottom__content {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        .section__left__bottom__content h2 {
-            margin-bottom: 20px;
-        }
-
-        .section__right {
-            width: 47%;
-            height: 650px;
-        }
-
-        .todo {
-            width: 600px;
-            height: 200px;
-            font-size: 24px;
-            margin-top: 20px;
-        }
-
-        .calender {
-            margin-left: 10px;
-        }
-
-        .calender h2 {
-            margin-bottom: 20px;
-        }
-
-        .align {
-            text-align: center;
-            background-color: #5c5c5c;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 15px;
-        }
-
-        .align td {
-            padding: 3px;
-        }
-
-        .move_month {
-            font-size: 1%;
-            color: #ccc;
-        }
-
-        .sunday {
-            color: #FF9090;
-        }
-
-        .saturday {
-            color: #7ED5E4;
-        }
-
-        .section__bottom {
-            width: 1200px;
-            margin-top: 50px;
-            display: flex;
-            justify-content: center;
-        }
-
-        #footer {
-            width: 800px;
-            margin: 0px auto;
-        }
-
-        .center_bar {
-            width: 6%;
-        }
-
-        .ul {
-            padding: 0;
-            margin-left: 10px;
-        }
-
-        .div__up,
-        .div__down {
-            height: 50%;
-        }
-
-        .space-between,
-        .div__down h2 {
-            border-bottom: 1px solid white;
-        }
-
-        .section__left__top {
-            display: flex;
-        }
-
-        .section__left__top span,
-        .section__left__bottom__content {
-            width: 246px;
-        }
-
-        .div__down h2 {
-            padding: 0 0 10px 10px;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 
-<body style="background-color: #1e1e1e; color: white;" onload="build();">
+<body style="background-color: #1e1e1e; color: white" onload="build();">
     <!-- html include -->
     <div id="header__bar" w3-include-html="..\studyJaewan\headerBar.html">
         <script>
@@ -217,12 +37,14 @@
                         </div>
                         <div class="section__left_title">
                             <a href="..\studyJaewan\innerStudy.html">
-                                <button type="button" id="btn" class="btn btn-success">페이지 바로가기</button>
+                                <button type="button" id="btn" class="btn btn-success">
+                                    페이지 바로가기
+                                </button>
                             </a>
                         </div>
                     </div>
                     <div class="section__left__studyinfo">
-                        <img src="resource\profile.png">
+                        <img src="resource\profile.png" />
                         <div>
                             <h2>스터디 명</h2>
                             <h4>설명</h4>
@@ -234,7 +56,7 @@
                         <span>
                             <h2>공지사항</h2>
                         </span>
-                        <div style="width: 50px; margin-left: 22px;"></div>
+                        <div style="width: 50px; margin-left: 22px"></div>
                         <span>
                             <h2>이번 주 할 일</h2>
                         </span>
@@ -248,19 +70,23 @@
                                 <li>공지사항 4</li>
                             </ul>
                         </div>
-                        <div style="width: 50px; margin-left: 22px;"></div>
+                        <div style="width: 50px; margin-left: 22px"></div>
                         <div class="section__left__bottom__content">
                             <ul class="ul">
-                                <div style="display: flex"><input type="checkbox" style="margin-right: 10px;">
+                                <div style="display: flex">
+                                    <input type="checkbox" style="margin-right: 10px" />
                                     <li>이번 주 할 일 1</li>
                                 </div>
-                                <div style="display: flex"><input type="checkbox" style="margin-right: 10px;">
+                                <div style="display: flex">
+                                    <input type="checkbox" style="margin-right: 10px" />
                                     <li>이번 주 할 일 2</li>
                                 </div>
-                                <div style="display: flex"><input type="checkbox" style="margin-right: 10px;">
+                                <div style="display: flex">
+                                    <input type="checkbox" style="margin-right: 10px" />
                                     <li>이번 주 할 일 3</li>
                                 </div>
-                                <div style="display: flex"><input type="checkbox" style="margin-right: 10px;">
+                                <div style="display: flex">
+                                    <input type="checkbox" style="margin-right: 10px" />
                                     <li>이번 주 할 일 4</li>
                                 </div>
                             </ul>
@@ -276,18 +102,23 @@
                             <h2>할일</h2>
                         </div>
                         <div class="section__left_title">
-                            <button type="button" id="btn" class="btn btn-success">내 스터디</button>
+                            <button type="button" id="btn" class="btn btn-success">
+                                내 스터디
+                            </button>
                         </div>
                     </div>
                     <div class="todo">
                         <ul class="ul">
-                            <div style="display: flex"><input type="checkbox" style="margin-right: 10px;">
+                            <div style="display: flex">
+                                <input type="checkbox" style="margin-right: 10px" />
                                 <li>7/8 개발 1차 회의</li>
                             </div>
-                            <div style="display: flex"><input type="checkbox" style="margin-right: 10px;">
+                            <div style="display: flex">
+                                <input type="checkbox" style="margin-right: 10px" />
                                 <li>7/5 기획 회의</li>
                             </div>
-                            <div style="display: flex"><input type="checkbox" style="margin-right: 10px;">
+                            <div style="display: flex">
+                                <input type="checkbox" style="margin-right: 10px" />
                                 <li>7/3 깃 스터디</li>
                             </div>
                         </ul>
@@ -308,11 +139,11 @@
                             </tr>
                             <tr>
                                 <td class="align sunday">일</td>
-                                <td class="align"> 월 </td>
-                                <td class="align"> 화 </td>
-                                <td class="align"> 수 </td>
-                                <td class="align"> 목 </td>
-                                <td class="align"> 금 </td>
+                                <td class="align">월</td>
+                                <td class="align">화</td>
+                                <td class="align">수</td>
+                                <td class="align">목</td>
+                                <td class="align">금</td>
                                 <td class="align saturday">토</td>
                             </tr>
                         </table>
@@ -322,12 +153,11 @@
         </div>
         <div class="section__bottom">
             <button type="button" id="btn_red" class="btn btn-secondary">
-                <a style="color: white;" href="study_join.html">스터디 가입하기</a></button>
+                <a style="color: white" href="study_join.html">스터디 가입하기</a>
+            </button>
         </div>
     </div>
-    <div id="footer">
-
-    </div>
+    <div id="footer"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
