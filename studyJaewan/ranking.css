@@ -1,0 +1,138 @@
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  width: 800px;
+  padding-top: 100px;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 0px 50px 5px;
+}
+
+#header_search {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #666;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+#header_search input {
+  border: 0;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+#header_search input:focus {
+  outline: none;
+}
+
+#header_search button {
+  width: 26px;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 3px;
+  padding: 0 6px 3px 5px;
+}
+
+#header_search button:hover {
+  background-color: red;
+  border: 1px solid red;
+}
+
+#nav {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+#nav div {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav a {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90px;
+  text-align: center;
+}
+
+#nav a.here {
+  background-color: red;
+}
+
+#nav a:hover {
+  background-color: #5c5c5c;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+.tbody {
+  text-align: center;
+}
+
+tr td:nth-child(2) {
+  text-align: left;
+}
+
+td {
+  padding: 8px;
+}
+
+.tbody tr {
+  background-color: #252526;
+}
+
+tr:nth-child(2n) {
+  background-color: #333333;
+}
+
+tbody tr td i {
+  font-size: 3rem;
+}
+
+#pasing {
+  margin: 40px 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pasing a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #1e1e1e;
+  color: white;
+  padding: 0px 3px;
+}
+
+#pasing a.here {
+  border: 1px solid red;
+  border-radius: 2px;
+  background-color: red;
+}
+
+#pasing a:hover {
+  border: 1px solid #5c5c5c;
+  background-color: #5c5c5c;
+  border-radius: 2px;
+}
+@media screen and (max-width: 1024px) {
+  .container2 {
+    padding-top: 75px;
+  }
+}

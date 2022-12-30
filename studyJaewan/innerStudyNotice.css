@@ -1,0 +1,65 @@
+.contants {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+tbody td:nth-child(2) {
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  padding-right: 20px;
+}
+
+thead {
+  font-weight: 600;
+}
+
+tr {
+  border-bottom: 1px solid #666;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#pasing {
+  margin: 20px 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+}
+
+#pasing a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #1e1e1e;
+  color: white;
+  padding: 0px 3px;
+}
+
+#pasing a.here {
+  border: 1px solid red;
+  border-radius: 2px;
+  background-color: red;
+}
+
+#pasing a:hover {
+  border: 1px solid #5c5c5c;
+  background-color: #5c5c5c;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 1023px) {
+}

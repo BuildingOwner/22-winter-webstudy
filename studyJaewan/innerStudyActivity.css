@@ -1,0 +1,112 @@
+.activity {
+  margin: 30px 0;
+  border: 1px solid #252526;
+  border-radius: 5px;
+  padding: 30px 0;
+  background-color: #252526;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  font-size: 30px;
+}
+
+span {
+  padding: 0 3px;
+  font-size: 18px;
+}
+
+.contants {
+  background-color: #5c5c5c;
+  margin: 30px 0 0 50px;
+  width: 89%;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.reference {
+  margin: 30px 0 0 50px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+
+.ref_icon {
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 0 3px;
+  color: #eee;
+}
+
+.ref_icon i {
+  font-size: 25px;
+}
+
+.bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#pasing {
+  width: 200px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pasing a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #1e1e1e;
+  color: white;
+  padding: 0px 3px;
+}
+
+#pasing a.here {
+  border: 1px solid red;
+  border-radius: 2px;
+  background-color: red;
+}
+
+#pasing a:hover {
+  border: 1px solid #5c5c5c;
+  background-color: #5c5c5c;
+  border-radius: 2px;
+}
+@media screen and (max-width: 1023px) {
+  .activity {
+    margin: 20px 0;
+    padding: 20px 0;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  .contants {
+    margin: 20px 0 0 50px;
+    font-size: 1rem;
+  }
+
+  .reference {
+    margin: 20px 0 0 50px;
+    font-size: 1rem;
+  }
+
+  .ref_icon i {
+    font-size: 22px;
+  }
+
+  #pasing {
+    margin: 10px 0;
+  }
+}
