@@ -1,227 +1,242 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <title>랭킹</title>
+    <!-- html include -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!--  -->
+    <style>
+      #container {
+        display: flex;
+        justify-content: center;
+      }
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <title>랭킹</title>
-  <!-- html include -->
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <!--  -->
-  <style>
-    #container {
-      display: flex;
-      justify-content: center;
-    }
+      .container2 {
+        width: 800px;
+        padding-top: 100px;
+      }
 
-    .container2{
-      width: 800px;
-      padding-top: 100px;
-    }
+      #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0px 50px 5px;
+      }
 
-    #header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0px 0px 50px 5px;
-    }
+      #header_search {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #666;
+        border-radius: 3px;
+        padding: 4px;
+      }
 
-    #header_search {
-      display: flex;
-      justify-content: space-between;
-      border: 1px solid #666;
-      border-radius: 3px;
-      padding: 4px;
+      #header_search input {
+        border: 0;
+        background-color: #1e1e1e;
+        color: white;
+      }
 
-    }
+      #header_search input:focus {
+        outline: none;
+      }
 
-    #header_search input {
-      border: 0;
-      background-color: #1e1e1e;
-      color: white;
-    }
+      #header_search button {
+        width: 26px;
+        background-color: #666;
+        border: 1px solid #666;
+        border-radius: 3px;
+        padding: 0 6px 3px 5px;
+      }
 
-    #header_search input:focus {
-      outline: none;
-    }
+      #header_search button:hover {
+        background-color: red;
+        border: 1px solid red;
+      }
 
-    #header_search button {
-      width: 26px;
-      background-color: #666;
-      border: 1px solid #666;
-      border-radius: 3px;
-      padding: 0 6px 3px 5px;
-    }
-    
-    #header_search button:hover {
-      background-color: red;
-      border: 1px solid red;
-    }
+      #nav {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid white;
+      }
 
-    #nav {
-      font-size: 20px;
-      display: flex;
-      justify-content: space-between;
-      padding: 10px;
-      border-bottom: 1px solid white;
-    }
+      #nav div {
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+      }
 
-    #nav div{
-      width: 300px;
-      display: flex;
-      justify-content: space-around;
-    }
+      #nav a {
+        padding: 5px;
+        border-radius: 5px;
+        width: 90px;
+        text-align: center;
+      }
 
-    #nav a {
-      padding: 5px;
-      border-radius: 5px;
-      width: 90px;
-      text-align: center;
-    }
+      #nav a.here {
+        background-color: red;
+      }
 
-    #nav a.here {
-      background-color: red;
-    }
+      #nav a:hover {
+        background-color: #5c5c5c;
+      }
 
-    #nav a:hover {
-      background-color: #5c5c5c;
-    }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 30px;
+      }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 30px;
-    }
+      .tbody {
+        text-align: center;
+      }
 
-    .tbody {
-      text-align: center;
-    }
+      tr td:nth-child(2) {
+        text-align: left;
+      }
 
-    tr td:nth-child(2) {
-      text-align: left;
-    }
+      td {
+        padding: 8px;
+      }
 
-    td {
-      padding: 8px;
-    }
+      .tbody tr {
+        background-color: #252526;
+      }
 
-    .tbody tr {
-      background-color: #252526;
-    }
+      tr:nth-child(2n) {
+        background-color: #333333;
+      }
 
-    tr:nth-child(2n){
-      background-color: #333333;
-    }
+      tbody tr td i {
+        font-size: 50px;
+      }
 
-    tbody tr td i {
-      font-size: 50px;
-    }
+      #pasing {
+        margin: 40px 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-    #pasing {
-      margin: 40px 300px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+      #pasing a {
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #1e1e1e;
+        color: white;
+        padding: 0px 3px;
+      }
 
-    #pasing a {
-      display: inline-block;
-      text-decoration: none;
-      border: 1px solid #1e1e1e;
-      color: white;
-      padding: 0px 3px;
-    }
+      #pasing a.here {
+        border: 1px solid red;
+        border-radius: 2px;
+        background-color: red;
+      }
 
-    #pasing a.here {
-      border: 1px solid red;
-      border-radius: 2px;
-      background-color: red;
-    }
+      #pasing a:hover {
+        border: 1px solid #5c5c5c;
+        background-color: #5c5c5c;
+        border-radius: 2px;
+      }
 
-    #pasing a:hover {
-      border: 1px solid #5c5c5c;
-      background-color: #5c5c5c;
-      border-radius: 2px;
-    }
-  </style>
-</head>
+      @media screen and (max-width: 768px) {
+        .container2 {
+          width: 80vw;
+        }
+      }
+    </style>
+  </head>
 
-<body style="background-color: #1e1e1e; color: white;">
-  <!-- html include -->
-  <div id="header__bar" w3-include-html="..\studyJaewan\headerBar.html">
-    <script>
-      w3.includeHTML();
-    </script>
-  </div>
-  <!--  -->
-  <div id="container">
-    <div class="container2">
-    <div id="header">
-      <h1>랭킹</h1>
-      <div id="header_search">
-        <form>
-          <input type="search" name="search" placeholder="search..">
-          <button type="submit"><i class="fa fa-search" style="color: white;"></i></button>
-        </form>
+  <body style="background-color: #1e1e1e; color: white">
+    <!-- html include -->
+    <div id="header__bar" w3-include-html="..\studyJaewan\headerBar.html">
+      <script>
+        w3.includeHTML();
+      </script>
+    </div>
+    <!--  -->
+    <div id="container">
+      <div class="container2">
+        <div id="header">
+          <h1>랭킹</h1>
+          <div id="header_search">
+            <form>
+              <input type="search" name="search" placeholder="search.." />
+              <button type="submit">
+                <i class="fa fa-search" style="color: white"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div id="nav">
+          <div>
+            <a href="#" class="here">똥싸개</a>
+            <a href="#">폐급</a>
+            <a href="#">유인원</a>
+          </div>
+        </div>
+        <table>
+          <colgroup>
+            <col style="width: 15vh" />
+            <col style="width: 70vh" />
+            <col style="width: 15vh" />
+          </colgroup>
+          <tbody class="tbody">
+            <tr>
+              <td><i class="bi bi-trophy-fill" style="color: gold"></i></td>
+              <td>이름</td>
+              <td>점수</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-trophy-fill" style="color: silver"></i></td>
+              <td>이름</td>
+              <td>점수</td>
+            </tr>
+            <tr>
+              <td><i class="bi bi-trophy-fill" style="color: #e3a072"></i></td>
+              <td>이름</td>
+              <td>점수</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>이름</td>
+              <td>점수</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>이름</td>
+              <td>점수</td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="pasing">
+          <a href="#"><i class="fa fa-angle-double-left"></i></a>
+          <a href="#"><i class="fa fa-angle-left"></i></a>
+          <a href="#" class="here">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#"><i class="fa fa-angle-right"></i></a>
+          <a href="#"><i class="fa fa-angle-double-right"></i></a>
+        </div>
       </div>
     </div>
-    <div id="nav">
-      <div>
-        <a href="#" class="here">똥싸개</a>
-        <a href="#">폐급</a>
-        <a href="#">유인원</a>
-      </div>
-    </div>
-    <table>
-      <colgroup>
-        <col style="width: 15vh;">
-        <col style="width: 70vh;">
-        <col style="width: 15vh;">
-      </colgroup>
-      <tbody class="tbody">
-        <tr>
-          <td><i class="bi bi-trophy-fill" style="color: gold;"></i></td>
-          <td>이름</td>
-          <td>점수</td>
-        </tr>
-        <tr>
-          <td><i class="bi bi-trophy-fill" style="color: silver;"></i></td>
-          <td>이름</td>
-          <td>점수</td>
-        </tr>
-        <tr>
-          <td><i class="bi bi-trophy-fill" style="color: #e3a072;"></i></td>
-          <td>이름</td>
-          <td>점수</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>이름</td>
-          <td>점수</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>이름</td>
-          <td>점수</td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="pasing">
-      <a href="#"><i class="fa fa-angle-double-left"></i></a>
-      <a href="#"><i class="fa fa-angle-left"></i></a>
-      <a href="#" class="here">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#"><i class="fa fa-angle-right"></i></a>
-      <a href="#"><i class="fa fa-angle-double-right"></i></a>
-    </div>
-  </div>
-</div>
-</body>
-
+  </body>
 </html>
