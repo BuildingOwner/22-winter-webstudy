@@ -10,7 +10,6 @@
 
 .img,
 .center {
-  width: 1150px;
   display: flex;
   margin-top: 235px;
 }
@@ -39,4 +38,27 @@
 }
 .center button:hover {
   background-color: #5c5c5c;
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    height: auto;
+    width: 30vw;
+  }
+
+  .img {
+    width: 85vw;
+  }
+
+  .img p {
+    font-size: 3rem;
+  }
+
+  #btn_red {
+    padding: 5px 10px 7px 10px;
+  }
+
+  button a {
+    font-size: 1rem;
+  }
 }

@@ -106,7 +106,7 @@ tbody tr td i {
 }
 
 #pasing {
-  margin: 40px 300px;
+  width: 20vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -131,8 +131,21 @@ tbody tr td i {
   background-color: #5c5c5c;
   border-radius: 2px;
 }
+
+.center {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1024px) {
   .container2 {
     padding-top: 75px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container2 {
+    width: 80vw;
   }
 }
