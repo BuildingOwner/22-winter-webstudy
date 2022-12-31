@@ -40,6 +40,21 @@
   background-color: #5c5c5c;
 }
 
+@media screen and (max-width: 1024px) {
+  img {
+    height: auto;
+    width: 40vw;
+  }
+
+  .img p {
+    font-size: 5rem;
+  }
+
+  button a {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   img {
     height: auto;
