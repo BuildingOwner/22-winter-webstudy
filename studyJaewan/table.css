@@ -38,3 +38,16 @@
 .section__article .title {
     width: 60%;
 }
+
+@media screen and (max-width:768px){
+    .section__article .your_title {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+    
+    td{
+        font-size: 0.9rem;
+    }
+   
+
+}
