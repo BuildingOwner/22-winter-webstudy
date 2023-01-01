@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- 달력 시작 -->
     <link rel="stylesheet" href="calender.css" />
     <script src="calender.js"></script>
@@ -22,9 +21,9 @@
 <body style="background-color: #1e1e1e; color: white" onload="build();">
     <!-- html include -->
     <div id="header__bar" w3-include-html="..\studyJaewan\headerBar.html">
-        <script>
-            w3.includeHTML();
-        </script>
+      <script>
+        w3.includeHTML();
+      </script>
     </div>
     <!--  -->
     <div id="section">
@@ -162,7 +161,38 @@
                         </div>
                     </div>
                 </div>
+                <div style="display: flex">
+                  <input type="checkbox" style="margin-right: 10px" />
+                  <li>7/3 깃 스터디</li>
+                </div>
+              </ul>
             </div>
+          </div>
+          <div class="div__down">
+            <h2>일정</h2>
+            <div class="calender">
+              <table class="align" id="calendar">
+                <tr>
+                  <td class="move_month">
+                    <label onclick="beforem()" id="before"></label>
+                  </td>
+                  <td colspan="5" class="align" id="yearmonth"></td>
+                  <td class="move_month">
+                    <label onclick="nextm()" id="next"></label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align sunday">일</td>
+                  <td class="align">월</td>
+                  <td class="align">화</td>
+                  <td class="align">수</td>
+                  <td class="align">목</td>
+                  <td class="align">금</td>
+                  <td class="align saturday">토</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
         <div class="section__bottom">
             <button type="button" id="btn_red" class="btn btn-secondary">

@@ -1,90 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <!-- html include -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <!--  -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./mainPage.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <!-- html include -->
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <!--  -->
-  <title>Document</title>
-  <style>
-    #header__bar {
-      position: sticky;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .img, .center {
-      width: 1150px;
-      display: flex;
-      margin-top: 235px;
-    }
-
-    .reverse {
-      flex-direction: row-reverse;
-      justify-content: right;
-    }
-
-    .img p {
-      padding: 0 50px;
-      font-size: 100px;
-    }
-
-    .center{
-      justify-content: center;
-    }
-
-    .center button{
-      margin-bottom: 100px;
-      font-size: 25px;
-      background-color: red;
-      padding: 10px 30px;
-      border-radius: 10px;
-      border: 0;
-    }
-    .center button:hover{
-      background-color: #5c5c5c;
-    }
-  </style>
-</head>
-
-<body style="background-color: #1e1e1e; color: white;">
-  <!-- html include -->
-  <div id="header__bar" w3-include-html="..\studyJaewan\headerBar.html">
-    <script>
-      w3.includeHTML();
-    </script>
-  </div>
-  <!--  -->
-  <div class="container">
-    <div class="img">
-      <img src="engineering_team.svg" height="300px" alt="오류">
-      <p>설명</p>
+  <body style="background-color: #1e1e1e; color: white">
+    <!-- html include -->
+    <div id="header__bar" w3-include-html="..\studyJaewan\headerBar.html">
+      <script>
+        w3.includeHTML();
+      </script>
     </div>
-    <div class="img reverse">
-      <img src="team_up.svg" height="400px" alt="오류">
-      <p>설명</p>
+    <!--  -->
+    <div class="container">
+      <div class="img">
+        <img src="engineering_team.svg" height="300px" alt="오류" />
+        <p>설명</p>
+      </div>
+      <div class="img reverse">
+        <img src="team_up.svg" height="400px" alt="오류" />
+        <p>설명</p>
+      </div>
+      <div class="img">
+        <img src="educator.svg" height="350px" alt="오류" />
+        <p>설명</p>
+      </div>
+      <div class="center">
+        <button type="button">
+          <a href="..\Study_main\study_join.html">스터디 가입하기</a>
+        </button>
+      </div>
     </div>
-    <div class="img">
-      <img src="educator.svg" height="350px" alt="오류">
-      <p>설명</p>
-    </div>
-    <div class="center">
-      <button type="button">
-        <a href="..\Study_main\study_join.html">스터디 가입하기</a>
-      </button>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
