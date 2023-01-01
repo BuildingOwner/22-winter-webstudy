@@ -1,0 +1,17 @@
+
+.section__article .like {
+    width: 10%;
+}
+
+.section__article .title {
+    width: 10%;
+}
+
+@media screen and (max-width:768px) {
+    .out__c {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 5%;
+}
+}
